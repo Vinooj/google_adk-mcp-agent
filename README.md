@@ -8,10 +8,16 @@ Unlike deterministic Workflow Agents that follow predefined execution paths, Llm
 ## Agent Development Steps 
 
 1. LlmAgeny defnition generally resides in the agnets.py file. It have name, model, description and detailed instructions that disctate the behavior of the agent.
-2. Define the tools that are avilable to the agent.
-   - There is at least one agent called a root agent. This agent can have sub agents. The root agent is defined in a file called tools.py . This file can have agents defined other than the root agent.
-   - sub-agents resides in its own seperate folder
-   - There is also a concept called agent team. Don;t confuse it it sub_agents.  
-4. Agnets als supports
+   - There are primarily 2 ttypes of agent
+     - Root agent
+       - In the Agent Development Kit, a root agent is the top-level agent in a multi-agent system. Think ofit like the conductor of an orchestra who orchestrates the work of other artists.
+       - The root agent is defined in a file called agents.py.
+     - Sub-agents 
+        - Sub-agent refers to an agent that is called or orchestrated by another (Parent) agent to perform a specific task as part of a larger workflow
+        - They generally resides in its own seperate folder and has their own tools
+   - There is also a concept called agent team. Don;t confuse it it sub_agents. 
+3. Define the tools that are avilable to the agent.
+   - Agents leverage tools to get things done. Tools are python functions and is registered with the agents in agents.py file.
+5. Agents also supports
    - Callbacks
    - Multi Agent control 
