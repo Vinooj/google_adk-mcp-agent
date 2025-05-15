@@ -21,8 +21,8 @@ Ref: https://docs.github.com/en/get-started/writing-on-github/getting-started-wi
                               3. Respond clearly to the user, stating the capital city.
                               Example Query: "What's the capital of France?"
                               Example Response: "The capital of France is Paris."
-         """,
-             # tools will be added next
+                        """,
+         ...
          )
    ```
    - There are primarily 2 ttypes of agent
@@ -66,5 +66,14 @@ Here are some key things a more sophisticated multi-agent system can do that mig
    - **Multi-Agent:** In scenarios where data and resources are distributed, a multi-agent system can deploy agents closer to the data sources, enabling more efficient processing and decision-making. Agents can coordinate across these distributed environments.   
    - **Sub-Agents:** A root agent and its sub-agents typically operate within a more centralized context, making it more challenging to effectively manage and process information across geographically dispersed locations.
    
-In essence, a true multi-agent system moves beyond a simple command-and-control hierarchy. 1  It embraces concepts of autonomy, communication, collaboration, and emergence to tackle problems that require distributed intelligence, adaptability, and robustness beyond what a centrally orchestrated set of sub-agents can easily provide. 2    
+In essence, a true multi-agent system moves beyond a simple command-and-control hierarchy. 1  It embraces concepts of autonomy, communication, collaboration, and emergence to tackle problems that require distributed intelligence, adaptability, and robustness beyond what a centrally orchestrated set of sub-agents can easily provide. 
+
+## Workflow Agents 
+Workflow agents" are specialized agents that are designed purely for orchestrating the execution flow of sub-agents. Workflow Agents operate based on predefined logic that helps build results in deterministic and predictable execution patterns. ADK provides three core workflow agent types,
+1. Sequential
+2. Loop
+3. Parallel
+
+   
+
 
